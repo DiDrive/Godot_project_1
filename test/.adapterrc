@@ -1,0 +1,20 @@
+{
+  "exportChannels": ["Facebook", "Google", "Tiktok"],
+  "injectOptions": {
+    "Facebook": {
+      "head": "<meta name=\"ad.size\" content=\"width=320,height=480\">",
+      "sdkScript": "<script src=\"https://connect.facebook.net/en_US/fbinstant.6.3.js\"></script>",
+      "body": "<script>FBInstant.initializeAsync().then(function() { /* 初始化代码 */ });</script>"
+    },
+    "Google": {
+      "head": "",
+      "sdkScript": "<script src=\"https://www.gstatic.com/external_hosted/adtech_ads_api.js\"></script>",
+      "body": "<script>ExitApi.exit();</script>"
+    },
+    "Tiktok": {
+      "head": "",
+      "sdkScript": "<script src=\"https://sf16-muse-va.ibytedtos.com/obj/union-fe-nc-i18n/playable/sdk/playable-sdk.js\"></script>",
+      "body": "<script>window.openAppStore = function() { /* 打开应用商店 */ };</script>"
+    }
+  }
+}

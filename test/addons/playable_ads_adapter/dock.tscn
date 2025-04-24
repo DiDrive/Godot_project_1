@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/playable_ads_adapter/dock.gd" id="1_wxye4"]
+
+[node name="Dock" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wxye4")
+
+[node name="BuildButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 31.0
+text = "构建"
+
+[node name="PlatformList" type="ItemList" parent="."]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 200.0
+offset_bottom = 200.0
+select_mode = 1
+
+[node name="StatusLabel" type="Label" parent="."]
+layout_mode = 0
+offset_top = 210.0
+offset_right = 200.0
+offset_bottom = 236.0
