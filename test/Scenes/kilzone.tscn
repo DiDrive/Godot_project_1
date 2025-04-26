@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dom8ghfal30rn"]
+
+[ext_resource type="Script" uid="uid://dh4uo0et4w0h4" path="res://Scripts/kilzone.gd" id="1_bpfw0"]
+
+[node name="Kilzone" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_bpfw0")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.6
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
