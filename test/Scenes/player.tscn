@@ -1,7 +1,8 @@
-[gd_scene load_steps=42 format=3 uid="uid://y4pn1xtgitd3"]
+[gd_scene load_steps=43 format=3 uid="uid://y4pn1xtgitd3"]
 
 [ext_resource type="Script" uid="uid://oua15d77cio2" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://wxceqmi5aekc" path="res://Assets/sprites/knight.png" id="1_v0iea"]
+[ext_resource type="Script" uid="uid://c37k3ihk32rsk" path="res://Scripts/audioPool.gd" id="6_x3wgy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
 atlas = ExtResource("1_v0iea")
@@ -313,3 +314,6 @@ frame_progress = 1.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -10)
 shape = SubResource("CircleShape2D_cvnsp")
+
+[node name="AudioPool" type="Node" parent="."]
+script = ExtResource("6_x3wgy")

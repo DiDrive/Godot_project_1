@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.4", "Mobile")
 run/max_fps=144
 config/icon="res://icon.svg"
 
+[autoload]
+
+Music="*res://Scenes/music.tscn"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/playable_ads_adapter/plugin.cfg")
